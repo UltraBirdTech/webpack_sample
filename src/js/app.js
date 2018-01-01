@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import additionalCalculator from './modules/additional-calculator';
 import taxCalculator from './modules/tax-calculator';
 
@@ -11,3 +12,4 @@ var tax = 1.8;
 var priceIncludeTax = taxCalculator(totalPrice, tax);
 
 console.log (priceIncludeTax);
+$('body').html(priceIncludeTax);
